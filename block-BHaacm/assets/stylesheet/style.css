@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custum css */
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+
+body{
+    font-size:16px;
+    line-height:1.5;
+    font-family: 'Lora', serif;
+}
+
+:root{
+    --primary:#E9ECFC;
+    --scondary:#232A47;
+    --textcolor:#A5A6AD;
+    --btn-color:#53B668;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    padding:0 2rem;
+}
+.font-0{
+    font-size: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.item-strech{
+    align-items: stretch;
+}
+.item-center{
+    align-items: center;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-30{
+    flex: 0 1 32%;
+}
+
+.full-width{
+    width:100%;
+}
+.padding{
+    padding:5rem 0;
+}
+.btn{
+    padding: 0.8rem 2rem;
+    font-size:1.2rem;
+    color: white;
+    background-color: var(--btn-color);
+    display: inline-block;
+    border-radius:0.3rem;
+}
+
+/* header */
+.header{
+    background-color:var(--scondary);
+    padding:1rem 0;
+}
+.nav-menu li{
+    margin-left:2.5rem;
+    font-size:1rem;
+}
+.nav-menu a{
+    color: white;
+    font-weight: 500;
+}
+.nav-menu .active{
+    color:var(--btn-color);
+}
+/* article-image section */
+.lorem-article{
+    background-color: var(--primary);
+}
+.lorem-article h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.lorem-article p{
+    color: var(--textcolor);
+    padding:1.5rem 0;
+}
+/* our-blog */
+
+.blog h2{
+    font-size:2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom:1rem;
+}
+.blog img{
+    max-height: 230px;
+    -o-object-fit: cover;
+        object-fit: cover;
+}
+.blog-article h3{
+    font-size:1.5rem;
+    font-weight: 500;
+    padding:0.7rem 0;
+}
+.blog-article p{
+    color: var(--textcolor);
+    padding-bottom:0.7rem;
+}
+
+/* footer */
+.footer{
+    background-color: var(--scondary);
+    padding:2rem 0rem;
+
+    
+}
+.copy-right h2{
+    font-size:1.8rem;
+    color: white;
+}
+.fab{
+    font-size:1.8rem;
+    color: white;
+    margin-left:2rem;
+}
+
+/* responsive */
+@media screen and (max-width:786px){
+    html{
+        font-size: 10px
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .wrap-revers{
+        flex-wrap: wrap-reverse;
+    }
+    .flex-48, .flex-30{
+        flex: 0 1 100%;
+    }
+    /* header */
+    .header{
+        padding: 2rem 0;
+    }
+    .navbar{
+        display:block ;
+        text-align: center;
+    }
+    .nav-menu li {
+        font-size: 2rem;
+        padding: 0 0.5rem;
+    }
+    .justify-center{
+        justify-content: flex-start;
+        justify-content: center;
+    }
+    /* article-image section */
+    .lorem{
+        margin-bottom: 2rem;
+    }
+    .lorem h1{
+        font-size: 4rem;
+        font-weight: 700;
+        padding: 2rem 0;
+    }
+    .lorem p{
+        font-size: 2rem;
+    }
+    
+    /* blog section */
+    .blog-article{
+        padding: 2rem 0;
+    }
+    .blog h2{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .blog h3{
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 2rem 0;
+    }
+    .blog p{
+        font-size: 2rem;
+    }
+    .btn{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    /* footer section */
+    .footer-parent{
+        display: block;
+        text-align: center;
+    }
+    .copy-right h2{
+        font-size: 2.5rem;
+    }
+    .fab{
+        font-size: 3rem;
+        margin:1rem 1rem;
+    }
+}

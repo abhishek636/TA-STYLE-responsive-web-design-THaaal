@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive layout</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/fec47e549f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container flex item-center navbar">
+        <a class="brand" href="#"><img src="./assets/logo.png" alt="logo" /></a>
+        <nav>
+          <ul class="flex justify-center nav-menu">
+            <li><a href="#">HOME</a></li>
+            <li><a class="active" href="#">BLOG</a></li>
+            <li><a href="#">ABOUT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- article-image section -->
+      <section>
+        <article class="lorem-article padding">
+          <div class="container flex wrap-revers">
+            <div class="flex-48 lorem justify-start">
+              <h1>What is lorem ipsum?</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                molestiae enim illo accusamus iusto ipsa in quam facere ratione
+                dolore, quas aperiam voluptate quibusdam fugiat culpa minus
+                praesentium pariatur quidem. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Libero sapiente totam voluptates
+                quis consequatur necessitatibus, rem quam corporis minus!
+                quas aperiam voluptate quibusdam fugiat culpa minus
+                praesentium pariatur quidem.
+              </p>
+              <a class="btn" href="#">Read More</a>
+            </div>
+            <div class="flex-48">
+              <img class="full-width" src="./assets/01.png" alt="png" />
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="blog padding">
+        <div class="container">
+          <h2>Our Blog</h2>
+          <div class="flex">
+            <article class="blog-article flex-30">
+              <div  class="font-0">
+                <img class="full-width" src="./assets/02.png" alt="image2" />
+              </div>
+              <h3>Why do we use it ?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                corporis, vero hic sunt dolorum perspiciatis vel molestiae
+                sapiente,
+              </p>
+              <a class="btn" href="#">Read More</a>
+            </article>
+            <article class="blog-article flex-30">
+              <div  class="font-0">
+                <img class="full-width" src="./assets/03.png" alt="image2" />
+              </div>
+              <h3>Why do we use it ?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                corporis, vero hic sunt dolorum perspiciatis vel molestiae
+                sapiente,
+              </p>
+              <a class="btn" href="#">Read More</a>
+            </article>
+            <article class="blog-article flex-30">
+              <div class="font-0">
+                <img class="full-width" src="./assets/04.png" alt="image2" />
+              </div>
+              <h3>Why do we use it ?</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+                corporis, vero hic sunt dolorum perspiciatis vel molestiae
+                sapiente,
+              </p>
+              <a class="btn" href="#">Read More</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-parent flex item-center">
+        <div class="copy-right">
+          <h2>&copy; AltCampus</h2>
+        </div>
+        <na>
+          <ul class="icon">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
